@@ -20,11 +20,13 @@ public class YouTubeActivity extends YouTubeBaseActivity implements YouTubePlaye
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_you_tube);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         youTubeView = (YouTubePlayerView) findViewById(R.id.youtube_view);
-        youTubeView.initialize(Config.DEVELOPER_KEY, this);
-
+        youTubeView.initialize(Config.DEVELOPER_KEY,this);
+        //setActionBar(toolbar);
+        //getActionBar().setDisplayHomeAsUpEnabled(true);
         Bundle bun = getIntent().getExtras();
         int y = bun.getInt("x");
 

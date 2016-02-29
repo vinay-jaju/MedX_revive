@@ -4,11 +4,8 @@
     <item
         android:id="@+id/action_constant_flash"
         android:orderInCategory="100"
+        android:icon="@drawable/ic_wb_incandescent_24dp"
         android:title="FlashLight"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/action_sos_flash"
-        android:orderInCategory="200"
-        android:title="FlashLight"
-        app:showAsAction="never" />
+        app:showAsAction="always" />
+
 </menu>

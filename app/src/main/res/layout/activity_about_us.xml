@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.android.medx.YouTubeActivity">
+    tools:context="com.example.android.medx.AboutUs">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_you_tube" />
+    <include layout="@layout/content_about_us" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

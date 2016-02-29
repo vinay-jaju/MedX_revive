@@ -79,11 +79,7 @@ public class MainActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
-       /* if (isFlashSupported()) {
-            camera = Camera.open();
-            parameters = camera.getParameters(); } else {
-            showNoFlashAlert();
-        }*/
+
         return true;
     }
 
@@ -95,9 +91,12 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-     /*    if (id == R.id.action_constant_flash) {
+        if (id == R.id.action_constant_flash) {
+            if (isFlashSupported()) {
+                camera = Camera.open();
+                parameters = camera.getParameters();
 
-               if(isFlashLightOn){
+                if(isFlashLightOn){
                     // flashLightButton.setImageResource(R.drawable.flashlight_off);
                     parameters.setFlashMode(Camera.Parameters.FLASH_MODE_OFF);
                     camera.setParameters(parameters);
@@ -111,15 +110,18 @@ public class MainActivity extends AppCompatActivity
                     isFlashLightOn = true;
                 }
 
+            }
+            else {
+                Toast.makeText(this, "No FlashLight supported", Toast.LENGTH_SHORT).show();
+            }
+
+
 
 
             return true;
         }
-        else if (id == R.id.action_sos_flash) {
 
-            return true;
-        }
-*/
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -160,15 +162,18 @@ public class MainActivity extends AppCompatActivity
         switch (viewId) {
             case R.id.nav_home:
                 fragment = new Home();
-                title  = "Medx";
+                title  = "Revive";
                 break;
 
             case R.id.nav_maps:
                 startActivity(new Intent(this,MapsActivity.class));
                 break;
 
-            case R.id.nav_maps2:
-                //startActivity(new Intent(this,GooglePlacesActivity.class));
+            case R.id.nav_vids:
+                startActivity(new Intent(this,YouTubeList.class));
+                break;
+            case R.id.nav_about:
+                startActivity(new Intent(this,AboutUs.class));
                 break;
 
             case R.id.nav_logout:
@@ -211,7 +216,7 @@ public class MainActivity extends AppCompatActivity
                 }).show();
     }
 
-   /* private boolean isFlashSupported() {
+   private boolean isFlashSupported() {
         PackageManager pm = getPackageManager();
         return pm.hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH);
     }
@@ -225,7 +230,7 @@ public class MainActivity extends AppCompatActivity
         super.onDestroy();
     }
 
-*/
+
     @Override
     protected void onStart() {
         super.onStart();

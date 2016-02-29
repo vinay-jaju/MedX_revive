@@ -7,7 +7,7 @@ public class Config {
 
     // Google Console APIs developer key
     // Replace this key with your's
-    public static final String DEVELOPER_KEY = "AIzaSyCtv3U3YbVa-GqDM8S7oQE-2yqYQHvbO9I";
+    public static final String DEVELOPER_KEY = "AIzaSyDSp5oQv6O7keNPzv9VqtusM1-SeMdEJUA";
 
     // YouTube video id
     public static final String YOUTUBE_VIDEO_CODE = "lty1S8jsRGc";

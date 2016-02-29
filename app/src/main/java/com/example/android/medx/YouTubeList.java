@@ -6,6 +6,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
@@ -16,7 +17,7 @@ public class YouTubeList extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     public YouTubeAdapter adapter;
-    int icons[];
+    int icons[]={R.drawable.repairtyre,R.drawable.fireextingusher,R.drawable.hurricane,R.drawable.carsiking};
     public static List<Information> getData(int[] icons,String[] titles){
         List<Information> data=new ArrayList<>();
         for(int i=0;i<titles.length&&i<icons.length;i++){
@@ -37,7 +38,7 @@ public class YouTubeList extends AppCompatActivity {
         recyclerView = (RecyclerView) findViewById(R.id.hang_recycler_view);
         adapter = new YouTubeAdapter(getData(icons, getResources().getStringArray(R.array.list)));
         recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new GridLayoutManager(this, 1));
+        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, 1));
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

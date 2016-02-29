@@ -61,7 +61,7 @@ public class YouTubeAdapter extends RecyclerView.Adapter<YouTubeAdapter.MyViewHo
                 case 0:
                     try {
                         //YAHAN  PE ACTIVITY KA NAAM DAALNA JOH OPEN KARNA HAI
-                        c = Class.forName("com.kalpnil.youtubeplayer.YouTubeActivity");
+                        c = Class.forName("com.example.android.medx.YouTubeActivity");
                         Intent i = new Intent(v.getContext(), c);
                         i.putExtra("x", img[0]);  //img[] array me bas numbers daal dena jitne bhi cards banayega upar declare kiya hai
                         v.getContext().startActivity(i);
@@ -73,7 +73,7 @@ public class YouTubeAdapter extends RecyclerView.Adapter<YouTubeAdapter.MyViewHo
                 case 1:
                     try {
                         //YAHAN  PE ACTIVITY KA NAAM DAALNA JOH OPEN KARNA HAI
-                        c = Class.forName("com.kalpnil.youtubeplayer.YouTubeActivity");
+                        c = Class.forName("com.example.android.medx.YouTubeActivity");
                         Intent i = new Intent(v.getContext(), c);
                         i.putExtra("x", img[1]);
                         v.getContext().startActivity(i);
@@ -85,7 +85,7 @@ public class YouTubeAdapter extends RecyclerView.Adapter<YouTubeAdapter.MyViewHo
                 case 2:
                     try {
                         //YAHAN  PE ACTIVITY KA NAAM DAALNA JOH OPEN KARNA HAI
-                        c = Class.forName("com.kalpnil.youtubeplayer.YouTubeActivity");
+                        c = Class.forName("com.example.android.medx.YouTubeActivity");
                         Intent i = new Intent(v.getContext(), c);
                         i.putExtra("x", img[2]);
                         v.getContext().startActivity(i);
@@ -97,7 +97,7 @@ public class YouTubeAdapter extends RecyclerView.Adapter<YouTubeAdapter.MyViewHo
                 case 3:
                     try {
                         //YAHAN  PE ACTIVITY KA NAAM DAALNA JOH OPEN KARNA HAI
-                        c = Class.forName("com.kalpnil.youtubeplayer.YouTubeActivity");
+                        c = Class.forName("com.example.android.medx.YouTubeActivity");
                         Intent i = new Intent(v.getContext(), c);
                         i.putExtra("x", img[3]);
                         v.getContext().startActivity(i);

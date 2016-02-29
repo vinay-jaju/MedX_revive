@@ -61,9 +61,41 @@ public class Home extends Fragment {
                 click_photo=gaggeredList.get(position).getPhoto();
                 Intent callIntent = new Intent(Intent.ACTION_CALL);
                 switch(position){
-                   case 0: callIntent.setData(Uri.parse("tel:9699973049"));
+                   case 0: callIntent.setData(Uri.parse("tel:100"));
                       startActivity(callIntent);
                        break;
+                    case 1: callIntent.setData(Uri.parse("tel:101"));
+                        startActivity(callIntent);
+                        break;
+
+                    case 2: callIntent.setData(Uri.parse("tel:9699973049"));
+                        startActivity(callIntent);
+                        break;
+
+                    case 3: callIntent.setData(Uri.parse("tel:9699973049"));
+                        startActivity(callIntent);
+                        break;
+                    case 4: callIntent.setData(Uri.parse("tel:9699973049"));
+                        startActivity(callIntent);
+                        break;
+
+                    case 5: callIntent.setData(Uri.parse("tel:9699973049"));
+                        startActivity(callIntent);
+                        break;
+                    case 6: callIntent.setData(Uri.parse("tel:9699973049"));
+                        startActivity(callIntent);
+                        break;
+                    case 7: callIntent.setData(Uri.parse("tel:9699973049"));
+                        startActivity(callIntent);
+                        break;
+                    case 8: callIntent.setData(Uri.parse("tel:9699973049"));
+                        startActivity(callIntent);
+                        break;
+                    case 9: callIntent.setData(Uri.parse("tel:9699973049"));
+                        startActivity(callIntent);
+                        break;
+
+
 
                 }
             }
