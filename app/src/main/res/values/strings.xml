@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Medx</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_google_places">GooglePlacesActivity</string>
+    <string name="title_activity_sms">Sms</string>
+    <string name="title_activity_sms1">Sms1</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="google_app_id">AIzaSyDSp5oQv6O7keNPzv9VqtusM1-SeMdEJUA</string>
+    <string name="title_activity_login">Login</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string-array name="list">
+        <item>TAB 1</item>
+        <item>TAB 2</item>
+        <item>TAB 3</item>
+        <item>TAB 4</item>
+        <item>TAB 5</item>
+        <item>TAB 6</item>
+        <item>TAB 7</item>
+    </string-array>
+
+    <string name="title_logo">NATIONAL GEOGRAPHIC</string>
+    <string name="btn_skip_intro">Skip Intro</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="title_activity_you_tube">YouTubeActivity</string>
+    <string name="title_activity_you_tube_list">YouTubeList</string>
+
+</resources>
